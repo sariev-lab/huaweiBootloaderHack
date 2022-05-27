@@ -47,7 +47,7 @@ def writeFailedAttemptsToFile(filename = 'failedAttempts.json', failedAttempts =
 
 
 def algoIncrementChecksum(imei, checksum, genOEMcode):
-  genOEMcode  += int(checksum + math.sqrt(imei) * 1024)
+      genOEMcode  += int(checksum + math.sqrt(imei) * 1024)
   return genOEMcode
 
 
